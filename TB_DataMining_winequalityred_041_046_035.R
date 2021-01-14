@@ -1,5 +1,5 @@
 #pengaturan lokasi kerja
-lokasi_kerja <- "D:/wd"
+lokasi_kerja <- "D:/TB-DataMining-RedWineQuality"
 setwd(lokasi_kerja)
 getwd()
 #membaca dataset
