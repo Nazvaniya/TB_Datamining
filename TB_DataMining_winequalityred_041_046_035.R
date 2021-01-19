@@ -21,7 +21,7 @@ test.data <- dataset[-training.samples, ]
 #membuat model
 model <- rpart(quality ~., data = train.data, method = "class")
 #menampilkan pohon model
-rpart.plot(model, yesno = 2, extra = 100)
+rpart.plot(model, yesno = 2)
 #melakukan prediksi pada data testing
 predicted.classes <- model %>% predict(test.data, type = "class")
 #menampilkan beberapa nilai dari objek yang diprediksi
