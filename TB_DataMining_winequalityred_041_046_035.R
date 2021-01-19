@@ -20,6 +20,8 @@ train.data <- dataset[training.samples, ]
 test.data <- dataset[-training.samples, ]
 #membuat model
 model <- rpart(quality ~., data = train.data, method = "class")
+#melihat summery dari model
+summery(model)
 #menampilkan pohon model
 rpart.plot(model, yesno = 2)
 #melakukan prediksi pada data testing
